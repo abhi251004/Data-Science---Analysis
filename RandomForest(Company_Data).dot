@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Income <= 71.0\nsquared_error = 756.0\nsamples = 189\nvalue = 67.6"] ;
+1 [label="Income <= 49.0\nsquared_error = 216.2\nsamples = 104\nvalue = 47.3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Income <= 34.5\nsquared_error = 46.4\nsamples = 57\nvalue = 35.2"] ;
+1 -> 2 ;
+3 [label="squared_error = 16.8\nsamples = 28\nvalue = 28.9"] ;
+2 -> 3 ;
+4 [label="squared_error = 15.0\nsamples = 29\nvalue = 40.0"] ;
+2 -> 4 ;
+5 [label="Income <= 60.5\nsquared_error = 32.9\nsamples = 47\nvalue = 61.8"] ;
+1 -> 5 ;
+6 [label="squared_error = 12.2\nsamples = 17\nvalue = 55.8"] ;
+5 -> 6 ;
+7 [label="squared_error = 6.5\nsamples = 30\nvalue = 65.8"] ;
+5 -> 7 ;
+8 [label="Income <= 95.0\nsquared_error = 240.1\nsamples = 85\nvalue = 93.7"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Income <= 81.5\nsquared_error = 43.2\nsamples = 42\nvalue = 80.6"] ;
+8 -> 9 ;
+10 [label="squared_error = 9.8\nsamples = 23\nvalue = 75.8"] ;
+9 -> 10 ;
+11 [label="squared_error = 15.8\nsamples = 19\nvalue = 87.0"] ;
+9 -> 11 ;
+12 [label="Income <= 109.5\nsquared_error = 57.4\nsamples = 43\nvalue = 108.3"] ;
+8 -> 12 ;
+13 [label="squared_error = 11.5\nsamples = 24\nvalue = 102.3"] ;
+12 -> 13 ;
+14 [label="squared_error = 12.9\nsamples = 19\nvalue = 115.9"] ;
+12 -> 14 ;
+}
